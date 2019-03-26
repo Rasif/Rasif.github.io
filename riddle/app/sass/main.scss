@@ -1,0 +1,26 @@
+@import "includes/variables.scss";
+@import "includes/mixins.scss";
+
+/* Шапка */
+
+@import "sections/header.scss";
+
+/* Введение */
+
+@import "sections/hero.scss";
+
+/* Портфолио */
+
+@import "sections/portfolio.scss";
+
+/* Низ */
+
+@import "sections/footer.scss";
+
+/* About section */
+
+@import "sections/about.scss";
+
+/* Contact section */
+
+@import "sections/contact.scss";

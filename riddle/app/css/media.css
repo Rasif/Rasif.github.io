@@ -1,0 +1,134 @@
+/**********  Небольшие планшеты в горизонтальном положении ***********/
+
+@media all and (max-width: 992px)
+{
+	.header__button
+	{
+		display: none;
+	}
+
+	.heading
+	{
+		font-size: 50px;
+	}
+
+	.portfolio__two,
+	.portfolio__one,
+	.portfolio__three
+	{
+		flex-basis: 49%;
+		height: 400px;
+	}
+
+	.about__sign
+	{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.about__left
+	{
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+
+	.about__wrapper
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact__wrapper
+	{
+		width: 80%;
+	}
+}
+
+/**********  10-дюймовые планшеты типа iPad в вертикальном положении ***********/
+
+@media all and (max-width: 768px)
+{
+	.menu
+	{
+		display: flex;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1020;
+		background-color: rgba(0, 0, 0, 0.9);
+		justify-content: center;
+		align-items: center;
+		transition: 0.6s;
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+
+	.menu__list
+	{
+		flex-direction: column;
+	}
+
+	.menu__item
+	{
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.menu__link
+	{
+		color: white;
+		font-size: 24px;
+	}
+
+	.header__mobile
+	{
+		display: block;
+	}
+
+	.heading
+	{
+		font-size: 40px;
+	}
+
+	.portfolio__area
+	{
+		justify-content: center;
+	}
+
+	.portfolio__two,
+	.portfolio__one,
+	.portfolio__three
+	{
+		flex-basis: 98%;
+		height: 600px;
+	}
+
+	.about__numbers
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-form
+	{
+		justify-content: center;
+	}
+
+	.contact-form__text
+	{
+		flex-basis: 90%;
+	}
+}
+
+/**********  Небольшие экранные устройства (например, телефоны) в горизонтальном положении ***********/
+
+@media all and (max-width:480px)
+{
+	.heading
+	{
+		font-size: 35px;
+	}
+}

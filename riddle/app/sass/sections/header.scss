@@ -1,0 +1,161 @@
+.header
+{
+	padding-top: 40px;
+	overflow: hidden;
+
+	&__wrapper
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+
+	&__button
+	{
+
+	}
+
+	&__mobile
+	{
+		
+	}
+
+	&__menu
+	{
+
+	}
+}
+
+.logo
+{
+	font-size: 24px;
+}
+
+.mobile
+{
+	display: none;
+	
+	&:checked + .mobile__label > .mobile__item
+	{
+		background-color: white;
+		transition: $transitionTime;
+	}
+	
+	&:checked + .mobile__label > .mobile__item:nth-child(1)
+	{
+		transform: translateY(4px) rotate(140deg);
+	}
+
+	&:checked + .mobile__label > .mobile__item:nth-child(2)
+	{
+		transform: rotate(140deg);
+		opacity: 0;
+	}
+
+	&:checked + .mobile__label > .mobile__item:nth-child(3)
+	{
+		transform: translateY(-4px) rotate(-140deg);
+	}
+
+	&:checked ~ .menu
+	{
+		opacity: 1;
+		transform: translateY(0%);
+		transition: $transitionTime;
+		animation: menuAnimation 0.3s linear;
+	}
+
+	@keyframes menuAnimation
+	{
+		0%
+		{
+			transform: translateY(0%);
+		}
+		30%
+		{
+			transform: translateY(15%);
+		}
+		60%
+		{
+			transform: translateX(15%) translateY(0);
+		}
+		80%
+		{
+			transform: translateX(-15%);
+		}
+		100%
+		{
+			transform: translateX(0);
+		}
+	}
+
+	&:checked + .mobile__label
+	{
+		position: absolute;
+		right: 0;
+		top: 4px;
+		z-index: 99999;
+	}
+
+	&__label
+	{
+		cursor: pointer;
+		display: none;
+	}
+
+	&__item
+	{
+		display: block;
+		height: 2px;
+		width: 20px;
+		background-color: $buttonBackground;
+		transition: $transitionTime;
+		
+		&:not(:last-child)
+		{
+			margin-bottom: 2px;
+		}
+	}
+}
+
+.menu
+{
+	&__list
+	{
+		display: flex;
+	}
+
+	&__item
+	{
+		&:not(:last-child)
+		{
+			margin-right: 30px;
+		}
+	}
+
+	&__link
+	{
+		color: $buttonBackground;
+		
+		&:hover
+		{
+			color: $buttonBackgroundHover;
+		}
+	}
+}
+
+.button
+{
+	display: inline-block;
+	color: white;
+	background-color: $buttonBackground;
+	padding: 18px 30px;
+	transition: $transitionTime;
+	
+	&:hover
+	{
+		background-color: $buttonBackgroundHover;
+		transition: $transitionTime;
+	}
+}

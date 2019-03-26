@@ -1,0 +1,20 @@
+.introduction
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.heading
+{
+	text-align: center;
+	font-size: 60px;
+	font-weight: 400;
+	
+	&__profession
+	{
+		color: $grey;
+	}
+}

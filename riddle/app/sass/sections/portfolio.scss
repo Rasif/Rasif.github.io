@@ -1,0 +1,154 @@
+.portfolio
+{
+	&__area
+	{
+		padding-top: 120px;
+		padding-bottom: 120px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}	
+
+	&__one,
+	&__two,
+	&__three
+	{
+		height: 600px;
+	}
+
+	&__one
+	{
+		flex-basis: 49%;
+	}
+
+	&__two
+	{
+		flex-basis: 33%;
+	}
+	
+	&__three
+	{
+		flex-basis: 100%;
+	}
+}
+
+.tags
+{
+	&__list
+	{
+		display: flex;
+	}
+
+	&__item
+	{
+		text-aling: center;
+
+		&:not(:first-child)
+		{
+			margin-left: 15px;
+		}
+	}
+
+	&__link
+	{
+		color: $grey;
+		transition: $transitionTime;
+		
+		&:hover
+		{
+			color: black;
+			transition: $transitionTime;
+		}
+		
+		&-active
+		{
+			color: black;
+		}
+	}
+}
+
+.work
+{
+	display: block;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+	position: relative;
+	
+	&:hover > .work__inner
+	{
+		opacity: 1;
+	}
+
+	&:hover > .work__inner > .work__text
+	{
+		letter-spacing: 0px;
+	}
+
+	&__inner, 
+	&__text
+	{
+		position: absolute;
+		transition: $workTransition;
+	}
+	
+	&__inner
+	{
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		opacity: 0;
+	}
+
+	&__text
+	{
+		bottom: 8%;
+		left: 10%;
+		color: white;
+		font-size: 28px;
+		letter-spacing: 6px;
+	}
+
+	&__one
+	{
+		background-image: url(../images/portfolio/1.jpg);
+	}
+
+	&__two
+	{
+		background-image: url(../images/portfolio/2.jpg);
+	}
+
+	&__three
+	{
+		background-image: url(../images/portfolio/3.jpg);
+	}
+
+	&__four
+	{
+		background-image: url(../images/portfolio/4.jpg);
+	}
+
+	&__five
+	{
+		background-image: url(../images/portfolio/5.jpg);
+	}
+
+	&__six
+	{
+		background-image: url(../images/portfolio/6.jpg);
+	}
+
+	&__seven
+	{
+		background-image: url(../images/portfolio/7.jpg);
+	}
+
+	&__eight
+	{
+		background-image: url(../images/portfolio/8.jpg);
+	}
+}

@@ -1,0 +1,45 @@
+.footer
+{
+	text-align: center;
+	padding-bottom: 150px;
+
+	&__heading
+	{
+		padding-bottom: 40px;
+	}
+
+	&__button
+	{
+		margin-bottom: 60px;
+	}
+
+	&__socials
+	{
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
+	&__icon
+	{
+		color: $grey;
+		cursor: pointer;
+		transition: $transitionTime;
+		
+		&:not(:last-child)
+		{
+			margin-right: 20px;
+		}
+
+		&:hover
+		{
+			color: black;
+			transition: $transitionTime;
+		}
+	}
+
+	&__copyright
+	{
+		font-size: 12px;
+		color: $grey;
+	}
+}	

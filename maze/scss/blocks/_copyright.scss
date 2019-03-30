@@ -1,0 +1,36 @@
+.copyright
+{
+    padding: 50px 10px;
+    background-image: url("../images/f-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__text
+    {
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.9rem;
+        padding-bottom: 30px;
+    }
+
+    &__socials
+    {
+        text-align: center;
+
+        i 
+        {
+            font-size: 0.8rem;
+            margin-right: 20px;
+            color: white;
+            transition: $transitionTime;
+            cursor: pointer;
+
+            &:hover 
+            {
+                color: black;
+                transition: $transitionTime;
+            }
+        }
+    }
+}

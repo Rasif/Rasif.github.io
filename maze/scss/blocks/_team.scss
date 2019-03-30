@@ -1,0 +1,66 @@
+.team
+{
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    &__card
+    {
+        margin-bottom: 30px;
+    }
+}
+
+.card 
+{
+    @include clearfix;
+
+    &__figure
+    {
+        max-width: 144px;
+        float: left;
+    }
+
+    &__image
+    {
+        @include image;
+    }
+
+    &__right 
+    {
+        margin-left: 144px;
+        padding: 5px 5px;
+    }
+
+    &__link
+    {
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: $transitionTime;
+
+        &:hover
+        {
+            color: $hoverColor;
+            transition: $transitionTime;
+        }
+    }
+}
+
+.title
+{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.text
+{
+    display: block;
+    color: $textColor;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}

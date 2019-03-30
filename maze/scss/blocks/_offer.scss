@@ -1,0 +1,57 @@
+.offer 
+{   
+    &__image 
+    {
+        min-height: 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+
+        &::after
+        {
+            @include pseudo;
+            background-color: rgba(black, 0.1);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+
+    &__first
+    {
+        background-image: url(../images/oa1.jpg);
+    }
+
+    &__second
+    {
+        background-image: url(../images/oa2.jpg);
+    }
+
+    &__inner
+    {
+        padding: 20px;
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+    }
+
+    &__title
+    {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__text
+    {
+        text-align: center;
+        font-weight: 100;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}

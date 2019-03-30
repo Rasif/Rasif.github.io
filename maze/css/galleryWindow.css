@@ -1,0 +1,11 @@
+.modalWindow__close
+{
+    transition: 0.3s;
+    font-size: 3rem;
+}
+
+.modalWindow__close:hover
+{
+    transition: 0.3s;
+    color: white !important;
+}

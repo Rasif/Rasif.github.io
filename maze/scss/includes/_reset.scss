@@ -1,0 +1,36 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html 
+{
+    font-size: 16px;
+}
+
+html, body
+{
+    min-height: 100%;
+}
+
+body
+{
+    background-color: $bodyColor;
+    font-family: "Myriad Pro Light", Arial, sans-serif;
+    font-size: 1rem;
+    color: white;
+    padding: 6% 7%;
+    speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+    -webkit-font-smoothing: subpixel-antialiased !important; //more fatty in safari
+    text-rendering: geometricPrecision !important; //more fatty in safari
+    text-transform: none; // mac ff fix
+    -webkit-font-smoothing: antialiased; // safari mac nicer
+    -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+    text-rendering: optimizeLegibility; 
+}

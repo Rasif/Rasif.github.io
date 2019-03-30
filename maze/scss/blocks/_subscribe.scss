@@ -1,0 +1,56 @@
+.subscribe
+{
+    padding: 50px 5px;
+    text-align: center;
+
+    &__title
+    {
+        font-size: 1.6rem;
+        color: white;
+    }
+
+    &__text
+    {
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+.form 
+{
+    width: 55%;
+    margin: 0 auto;
+    position: relative;
+
+    &__input
+    {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        color: black;
+        padding-left: 30px;
+        font-weight: bold;
+        height: 55px;
+        background-color: white;
+        border-radius: 40px;
+    }
+
+    &__submit
+    {
+        height: 48px;
+        border-radius: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-width: 30%;
+        outline: none;
+        border: none;
+        background-color: #f67590;
+        position: absolute;
+        right: 4px;
+        top: 50%;
+        text-transform: uppercase;
+        font-weight: bold;
+        transform: translateY(-50%);
+    }
+}

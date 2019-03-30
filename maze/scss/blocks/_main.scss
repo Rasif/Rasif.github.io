@@ -1,0 +1,144 @@
+.main
+{
+    background-color: $heroColor;
+    padding-top: 100px;
+    position: relative;
+}
+
+.header
+{
+    padding: 30px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include clearfix;
+
+    &__logo
+    {
+        float: left;
+    }
+
+    &__menu-button
+    {
+        float: right;
+    }
+
+    &__menu
+    {
+        float: right;
+        margin-right: 10%;
+    }
+}
+
+.logo
+{
+    cursor: pointer;
+
+    &__image
+    {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.menu-button
+{
+    display: none;
+
+    &:checked + .menu-button__label > .menu-button__line 
+    {
+        transition: $transitionTime;
+    }
+
+    &:checked + .menu-button__label > .menu-button__line:nth-child(1)
+    {
+        transform: translateY(5px) rotate(140deg);
+    }
+
+    &:checked + .menu-button__label > .menu-button__line:nth-child(2)
+    {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+
+    &:checked + .menu-button__label > .menu-button__line:nth-child(3)
+    {
+        transform: translateY(-5px) rotate(-140deg);
+    }
+
+    &:checked ~ .menu
+    {
+        transform: scale(1);
+        transition: $transitionTime;
+    }
+
+    &__label
+    {
+        cursor: pointer;
+        height: 12px;
+
+        &:hover .menu-button__line:nth-child(1)
+        {
+            transform: translateY(-3px);
+        }
+
+        &:hover .menu-button__line:nth-child(3)
+        {
+            transform: translateY(3px);
+        }
+    }
+
+    &__line
+    {
+        @include size(20px, 2px);
+        display: block;
+        background-color: white;
+        border-radius: 3px;
+        transition: $transitionTime;
+        
+        &:not(:last-child)
+        {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.menu 
+{
+    transform: scale(0);
+    transform-origin: right center;
+    transition: $transitionTime;
+
+    &__list
+    {
+        @include clearfix;
+    }
+
+    &__item
+    {
+        float: left;
+        list-style: none;
+
+        &:not(:last-child)
+        {
+            margin-right: 40px;
+        }
+    }
+
+    &__link
+    {
+        //-webkit-font-smoothing: subpixel-antialiased;
+        font-weight: 800;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+.hero 
+{
+    position: relative;
+}

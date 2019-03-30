@@ -1,0 +1,30 @@
+.process
+{
+    background-color: #f9faff;
+    padding: 70px 30px;
+
+    &__item
+    {
+        margin-bottom: 15px;
+    }
+
+    &__icon
+    {
+        float: left;
+        color: $hoverColor;
+        font-size: 2.5rem;
+        display: block;
+        text-align: center;
+
+    }
+
+    &__information
+    {
+        margin-left: 3.2rem;
+        text-align: left;
+    }
+
+    &__title
+    {
+    }
+}

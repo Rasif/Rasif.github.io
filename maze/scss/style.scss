@@ -1,0 +1,44 @@
+@import "includes/mixins";
+@import "includes/variables";
+@import "includes/reset";
+
+@import "blocks/main";
+@import "blocks/team";
+@import "blocks/offer";
+@import "blocks/gallery";
+@import "blocks/process";
+@import "blocks/about";
+@import "blocks/subscribe";
+@import "blocks/copyright";
+
+.scrollToTop
+{
+    position: fixed;
+    display: none;
+    bottom: 5%;
+    font-size: 2rem;
+    right: 5%;
+    color: white;
+    z-index: 99999;
+    cursor: pointer;
+    transition: $transitionTime;
+    animation: scrollAnimation 1s; 
+
+    &:hover 
+    {
+        color: black;
+        transition: $transitionTime;
+    }
+
+    @keyframes scrollAnimation
+    {
+        0%
+        {
+            bottom: 0%;
+        }
+        100%
+        {
+            bottom: 5%;
+        }
+    }
+}

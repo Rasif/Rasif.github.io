@@ -1,0 +1,29 @@
+@mixin clearfix
+{
+    &::after 
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin size($width, $height)
+{
+    width: $width;
+    height: $height;
+}
+
+@mixin pseudo
+{
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+@mixin image
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

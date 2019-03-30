@@ -1,0 +1,9 @@
+@font-face
+{
+	font-family: "Myriad Pro Light";
+	src: local("Myriad Pro Light"), url(../fonts/MyriadProLight.eot);
+	src: local("Myriad Pro Light"), url(../fonts/MyriadProLight.otf);
+	src: local("Myriad Pro Light"), url('../fonts/MyriadProLight.otf');
+	src: local("Myriad Pro Light"), url('../fonts/MyriadProLight.svg');
+	src: local("Myriad Pro Light"), url('../fonts/MyriadProLight.woff');
+}

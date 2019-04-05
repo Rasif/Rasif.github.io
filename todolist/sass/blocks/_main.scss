@@ -1,0 +1,164 @@
+.main 
+{
+    min-height: calc(100% - 45px);
+    background-color: $bgMainColor;
+    overflow: hidden;
+
+    &__wrapper
+    {
+        margin-bottom: -1000px;
+        padding-bottom: 1000px;
+        overflow: hidden;
+        position: relative;
+
+        @include medium
+        {
+            width: 100%;
+        }
+    }
+
+    &__right 
+    {
+        background-color: white;
+        margin-left: 265px;
+        margin-bottom: -1000px;
+        padding-bottom: 1050px;
+        border-left: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @include medium
+        {
+            margin-left: 0;
+        }
+    }
+
+    &__left 
+    {
+        max-height: 600px;
+        overflow-y: auto;
+        width: 265px;
+        position: absolute;
+        padding-top: 50px;
+    }
+
+    &__adding
+    {
+        margin-top: 10px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover > .main__add
+        {
+            color: $bgHeaderColor;
+            transition: $transitionTime;
+        }
+
+        &:hover > .main__plus
+        {
+            display: none;
+        }
+
+        &:hover > .main__plus-red
+        {
+            display: block;
+        }
+    }
+
+    &__addition 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        z-index: 5;
+        cursor: default;
+    }
+
+    &__plus,
+    &__plus-red
+    {
+        float: left;
+        height: 20px;
+        width: 20px;
+    }
+
+    &__plus-red 
+    {
+        display: none;
+    }
+
+    &__add
+    {
+        padding: 3px 0;
+        font-size: 0.8rem;
+        margin-left: 30px;
+        color: $textSecondary;
+        transition: $transitionTime;
+    }
+}
+
+.task 
+{
+    @include clearfix;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $textColorGray;
+    transition: background-color $transitionTime;
+    position: relative;
+    cursor: text;
+
+    &:hover 
+    {
+        background-color: #f7f7f7;
+        transition: background-color $transitionTime; 
+    }
+
+    &__circle
+    {
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 1px solid $textSecondary;
+        cursor: pointer;
+        transition: $transitionTime;
+        float: left;
+        text-align: center;
+
+        &:hover
+        {
+            background-color: $textColorGray;
+            transition: $transitionTime;
+        } 
+
+        &:hover > .task__check
+        {
+            opacity: 1;
+            transition: opacity $transitionTime;
+        }
+    }
+
+    &__check
+    {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        top: -2px;
+        opacity: 0;
+        transition: opacity $transitionTime;
+    }
+
+    &__text
+    {
+        font-size: 0.9rem;
+        margin-left: 30px;
+        color: darken($textSecondary, 30%);
+        white-space: pre-line;
+        word-wrap: break-word;
+    }
+}

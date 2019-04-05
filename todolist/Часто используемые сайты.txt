@@ -1,0 +1,17 @@
+Проверка на валидацию:
+http://validator.w3.org/
+
+Проверка на изображения:
+https://tinypng.com/analyzer
+
+Проверка на скорость:
+https://developers.google.com/speed/pagespeed/insights/?hl=ru
+
+Шрифты: 
+https://fonts.google.com/
+
+Иконки
+https://www.iconfinder.com/
+
+Иконки шрифтовые:
+https://fontawesome.com/

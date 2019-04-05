@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Media queries -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta information (for browsers) -->
+        <meta name="description" content=""> 
+        <meta name="keywords" content=""> 
+        <meta name="author" content="">
+        <!-- Title -->
+        <title></title>
+        <!-- Icon -->
+        <link rel="icon" href="" type="image/x-icon">
+        <!-- Our styles -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- html5.js для IE меньше, чем 9 -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- css3-mediaqueries.js для IE меньше, чем 9 -->
+		<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+
+        <div class="preloader preloader-active">
+            <div class="preloader__left"></div>
+            <span class="preloader__circle">
+                <span class="preloader__animation"></span>
+            </span>
+            <div class="preloader__right"></div>
+        </div>
+
+        <header class="header">
+            <div class="header__wrapper container">
+                <a href="https://github.com/rasif" target="_blank">
+                    <img class="header__logo logo" src="img/logo.png" alt="">
+                </a>
+                <div class="header__icons icons">
+                    <div class="icons__block" href="#">
+                        <img class="icons__image icons__add" src="img/add.png" alt="">
+                        <div class="tooltip icons__tooltip">
+                            <h4 class="tooltip__heading">Quick Add Task</h4>
+                            <p class="tooltip__text">
+                                Open by typing q
+                            </p>
+                        </div>
+                    </div>
+                    <img class="icons__image" src="img/bell.png" alt="">
+                    <img class="icons__image" src="img/settings.png" alt="">                        
+                </div>
+                <form class="header__search search">
+                    <img class="search__image" src="img/search.png" alt="">
+                    <input class="search__input" type="text" placeholder="Quick Find">
+                    <img class="search__image search__image-black" src="img/search-black.png" alt="">
+                </form>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container main__wrapper">
+                <div class="main__left">
+
+                </div>
+                <div class="main__right">
+                    <div class="main__tasks">
+                    </div>
+                    <div class="main__adding">
+                         <img class="main__plus" src="img/plus.png" alt="">
+                         <img class="main__plus-red" src="img/plus-red.png" alt="">
+                         <p class="main__add">Add Task</p>
+                         <div class="main__addition addition">
+                            <input type="text" class="addition__input input-text" name="">
+                            <a class="addition__button button" href="#">Add Task</a>
+                            <span class="addition__cancel">Cancel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="modal">
+            <div class="modal__adding adding">
+                <div class="adding__top">
+                    <h3 class="adding__heading">Quick Add Task</h3>
+                    <img class="adding__close" src="img/close.png" alt="">
+                </div>
+                <form action="" class="adding__form">
+                    <input type="text" class="adding__input input-text" name="">
+                </form>
+                <div class="adding__bottom">
+                    <a class="adding__button button" href="#">Add Task</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="contextmenu">
+            <li class="contextmenu__item contextmenuEdit">
+                <img class="contextmenu__image" src="img/pen.png" alt="">
+                <span class="contextmenu__name contextmenu__name-edit">Edit task</span>
+            </li>
+            <li class="contextmenu__item">
+                <img class="contextmenu__image" src="img/close.png" alt="">
+                <span class="contextmenu__name">Edit task</span>
+            </li>
+            <li class="contextmenu__item contextmenuDelete">
+                <img class="contextmenu__image contextmenu__image-red" src="img/delete-red.png" alt="">
+                <img class="contextmenu__image contextmenu__image-black" src="img/delete.png" alt="">
+                <span class="contextmenu__name contextmenu__name-red">Delete task</span>
+            </li>
+        </ul>
+
+        <div class="message">
+            <span class="message__text"></span>
+            <span class="message__hide">Hide</span>
+            <span class="message__time"></span>
+        </div>
+        <!-- Scripts -->
+        <script src="js/app.js" defer></script>
+    </body>
+</html>

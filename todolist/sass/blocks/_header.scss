@@ -1,0 +1,175 @@
+.header 
+{
+    height: 45px;
+    padding-top: 5px;
+    background-color: $bgHeaderColor;
+
+    @include medium 
+    {
+        height: 40px;
+        padding-top: 3px;
+    }
+
+    &__wrapper 
+    {
+        position: relative;
+        @include clearfix;
+    }
+
+    &__logo
+    {
+        float: left;
+
+        @include medium
+        {
+            display: none;
+        }
+    }
+
+    &__icons
+    {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        z-index: 99;
+    }
+
+    &__search
+    {
+        margin-left: 320px;
+        transform: translateY(5px);
+
+        @include medium
+        {
+            margin-left: 0;
+        }
+    }
+}
+
+.logo 
+{
+    cursor: pointer;
+}
+
+.icons 
+{
+    @include clearfix;
+    white-space: nowrap !important;
+
+    &__image
+    {
+        display: block;
+        height: 26px;
+        width: 26px;
+        padding: 5px;
+        cursor: pointer;
+        transition: background-color $transitionTime;
+        float: left;
+
+        &:hover 
+        {
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: background-color $transitionTime;
+        }
+
+        &:not(:last-child)
+        {
+            margin-right: 3px;
+        }
+
+        &:hover ~ .tooltip
+        {
+            display: block;
+        }
+    }
+
+    &__block
+    {
+        position: relative;
+        float: left;
+    }
+
+    &__tooltip
+    {
+        top: 150%;
+        left: 0;
+
+        @include medium 
+        {
+            left: -35px;
+
+            &::after 
+            {
+                left: 42px;
+            }
+        }
+    }
+}
+
+.search 
+{
+    white-space: nowrap;
+
+    &__input 
+    {
+        height: 26px;
+        width: 50%;
+        padding-left: 36px;
+        padding-right: 10px;
+        background-color: transparent;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 100;
+        outline: none;
+        border: 0;
+        transition: $transitionTime;
+        color: $textColorGray;  
+        border-radius: 3px;          
+
+        &::placeholder
+        {
+            color: $textColorGray;
+            transition: $transitionTime;
+        }
+
+        &:hover 
+        {
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: $transitionTime;
+        }
+
+        &:focus
+        {
+            transition: $transitionTime;
+            color: darken($textColorGray, 40%);            
+            background-color: white;
+            width: 100%;
+        }
+
+        &:focus::placeholder
+        {
+            transition: $transitionTime;
+            color: darken($textColorGray, 40%);            
+        }
+
+        &:focus ~ .search__image-black
+        {
+            display: block;
+        }
+    }
+
+    &__image 
+    {
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        &-black
+        {
+            display: none;
+            z-index: 1;
+        }
+    }
+}

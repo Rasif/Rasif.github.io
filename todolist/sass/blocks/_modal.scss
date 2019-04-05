@@ -1,0 +1,79 @@
+.modal 
+{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    transition: $transitionTime;
+    opacity: 0;
+
+    &.active 
+    {
+        opacity: 1;
+        transition: $transitionTime;
+    }
+
+    &__adding
+    {
+        position: absolute;
+        top: 10%;
+        left: -100%;
+        transform: translateX(-50%);
+        transition: $transitionTime;
+
+        &.active
+        {
+            transition: $transitionTime;
+            left: 50%;
+        }
+    }
+}
+
+.adding 
+{
+    width: 100%;
+    max-width: 550px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;  
+    
+    &__top 
+    {
+        @include clearfix;
+    }
+
+    &__heading
+    {
+        font-size: 0.9rem;
+        letter-spacing: 1.2px;
+        float: left;
+        color: lighten(black, 30%);
+        font-weight: 600;
+    }
+
+    &__close
+    {
+        float: right;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    &__form
+    {
+        margin: 20px 0;
+    }
+
+    @include medium 
+    {
+        max-width: 100%;
+        border-radius: 0;
+        top: 0;
+        padding: 10px 20px;
+    }
+}

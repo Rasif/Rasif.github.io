@@ -265,6 +265,11 @@
     display: none;
     top: 0;
     left: 0;
+
+    @include medium
+    {
+        width: 140px;
+    }
     
     &-active 
     {

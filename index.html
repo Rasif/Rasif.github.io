@@ -1,12 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Мой сайт</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content=""> 
+        <meta name="keywords" content=""> 
+        <meta name="author" content="">
+
+        <title>My portfolio</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- html5.js для IE меньше, чем 9 -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- css3-mediaqueries.js для IE меньше, чем 9 -->
+		<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
     </head>
     <body>
-        <a href="riddle">Riddle</a>
-        <a href="maze">Riddle</a>
-        <a href="todolist">ToDoList</a>
+        <section class="hero section">
+            <div class="hero__center">
+                <h1 class="hero__heading">I'm Rasif</h1>
+                <span class="button">Learn More</span>
+            </div>
+
+            <div class="hero__menu-mobile menu-mobile">
+                <i class="menu-mobile__item"></i>
+                <i class="menu-mobile__item"></i>
+                <i class="menu-mobile__item"></i>
+            </div>
+
+            <ul class="hero__socials">
+                <li class="hero__socials-item"><span></span></li>
+                <li class="hero__socials-item">
+                    <a href="https://github.com/rasif" target="_blank">
+                        <i class="hero__socials-icon fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="hero__socials-item">
+                    <a href="https://vk.com/bozqurdam" target="_blank">
+                        <i class="hero__socials-icon fab fa-vk"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="choice section">
+            <div class="container">
+                <h3 class="choice__title title">Why choose me</h3>
+                <div class="choice__wrapper">
+                    <div class="choice__cart cart">
+                        <figure class="cart__figure">
+                            <img src="img/app1.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">App Design</p>
+                    </div>
+                    <div class="choice__cart cart">
+                        <figure class="cart__figure">
+                            <img src="img/app2.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Responsive Layout</p>
+                    </div>
+                    <div class="choice__cart cart">
+                        <figure class="cart__figure">
+                            <img src="img/makbook.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Pixel Perfext Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="github section">
+            <a href="https://github.com/rasif" target="_blank" class="button github__button">My Github</a>
+        </section>
+
+        <section class="knowledge section">
+            <div class="container">
+                <h3 class="choice__title title">What i know</h3>
+                <div class="choice__wrapper owl-carousel owl-theme">
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/html.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">HTML</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/css.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">CSS</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/js.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">JavaScript</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/react.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">React</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/git.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Git</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/wordpress.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Wordpress</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/sass.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Sass</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/less.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Less</p>
+                    </div>
+                    <div class="choice__cart cart cart-carousel">
+                        <figure class="cart__figure">
+                            <img src="img/bootstrap.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="github github-second section">
+            <a href="https://vk.com/bozqurdam" target="_blank" class="button github__button">My Vkontakte</a>
+        </section>
+
+        <section class="future section">
+            <div class="container">
+                <h3 class="choice__title title">What I wanna know</h3>
+                <div class="choice__wrapper">
+                    <div class="choice__cart cart">
+                        <figure class="cart__figure">
+                            <img src="img/php.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">PHP</p>
+                    </div>
+                    <div class="choice__cart cart">
+                        <figure class="cart__figure">
+                            <img src="img/laravel.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Laravel</p>
+                    </div>
+                    <div class="choice__cart cart">
+                        <figure class="cart__figure">
+                            <img src="img/python.png" class="cart__image" alt=""/>
+                        </figure>
+                        <p class="cart__title">Python</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="github github-third section">
+            <a href="https://gist.github.com/rasif" target="_blank" class="button github__button">My Gists</a>
+        </section>
+
+        <section class="portfolio section">
+            <div class="container container-fluid">
+                <h3 class="portfolio__title title">My practices</h3>
+                <p class="portfolio__text">
+                    Here I practiced Flex.
+                </p>
+                <div class="page">
+                    <img class="page__image" src="img/first.jpg" alt="">
+                    <div class="page__info">
+                        <div class="page__top">
+                            <p class="page__name">Riddle</p>
+                            <a href="/riddle/" target="_blank" class="page__icon"><i class="fas fa-link"></i></a>
+                        </div>
+                        <a class="page__link" target="_blank" href="#"><i class="fas fa-ellipsis-h"></i></a>
+                    </div>
+                </div>
+                <p class="portfolio__text">
+                    Simple ToDoList. By doing this site, i practiced my JS.
+                </p>
+                <div class="page">
+                    <img class="page__image" src="img/second.png" alt="">
+                    <div class="page__info">
+                        <div class="page__top">
+                            <p class="page__name">ToDoList</p>
+                            <a href="/todolist" target="_blank" class="page__icon"><i class="fas fa-link"></i></a>
+                        </div>
+                        <a class="page__link" href="/todolist" target="_blank"><i class="fas fa-ellipsis-h"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <script src="libs/owl.carousel.min.js"></script>
+        <script src="libs/scrollSpeed.js"></script>
+        <script src="js/app.js" defer></script>
+        <script>
+                $('.owl-carousel').owlCarousel(
+                {
+                    loop:true,
+                    margin:10,
+                    responsive:{
+                        0:
+                        {
+                            items:1,
+                        },
+                        600:
+                        {
+                            items:3
+                        }
+                    }
+                });
+
+                jQuery.scrollSpeed(100, 800, 'easeOutCubic');
+        </script>
     </body>
 </html>

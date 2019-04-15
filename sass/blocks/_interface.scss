@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 16px;
+}
+
+html, 
+body
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Roboto Mono', monospace;
+    min-height: 600px;
+    overflow-x: hidden;
+}
+
+.section 
+{
+    padding-top: 100px;
+}
+
+.container
+{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-fluid
+{
+    @include medium
+    {
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

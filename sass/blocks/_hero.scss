@@ -1,0 +1,144 @@
+.hero
+{
+    height: 100vh;
+    background: url(../img/hero-bg.jpg) no-repeat center/cover fixed;
+    position: relative;
+    z-index: 1;
+    color: white;
+
+    &::after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+    }
+
+    &::before
+    {
+        content: "";
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        right: 3%;
+        bottom: 3%;
+        border: 2px solid white;
+    }
+
+    &__center 
+    {
+        width: 95%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__heading
+    {
+        font-weight: 700;
+        font-size: 6rem;
+        text-transform: uppercase;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+        margin-bottom: 40px;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include large
+        {
+            font-size: 5rem;
+        }
+
+        @include medium
+        {
+            font-size: 4rem;
+        }
+
+        @include small
+        {
+            font-size: 3rem;
+        }
+    }
+
+    &__subtitle
+    {
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+        color: white;
+    }
+
+    &__menu-mobile
+    {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+
+    &__socials
+    {
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+
+        &::before
+        {
+            display: block;
+            content: "";
+            width: 2px;
+            height: 42px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        
+        &::after
+        {
+            display: block;
+            content: "";
+            width: 2px;
+            height: 42px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+    }
+
+    &__socials-item
+    {
+        cursor: pointer;
+
+        &:not(:last-child)
+        {
+            margin-bottom: 10px;
+        }
+
+        > a 
+        {
+            color: white;
+            transition: 0.3s;
+
+            &:hover
+            {
+                color: black;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__socials-icon
+    {
+        font-size: 20px;
+    }
+}

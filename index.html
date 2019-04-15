@@ -14,13 +14,13 @@
 
         <link rel="stylesheet" href="css/reset.css">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
         <!-- html5.js для IE меньше, чем 9 -->
 		<!--[if lt IE 9]>
@@ -32,11 +32,16 @@
 			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]-->
     </head>
-    <body>
+    <body class="body-active">
+        <div class="preloader active">
+            <span class="preloader__circle"></span>
+            <span class="preloader__circle preloader__second"></span>    
+        </div>
+
         <section class="hero section">
             <div class="hero__center">
                 <h1 class="hero__heading">I'm Rasif</h1>
-                <span class="button">Learn More</span>
+                <span class="button learn-more">Learn More</span>
             </div>
 
             <div class="hero__menu-mobile menu-mobile">
@@ -60,7 +65,7 @@
             </ul>
         </section>
 
-        <section class="choice section">
+        <section class="choice section learn-more-section">
             <div class="container">
                 <h3 class="choice__title title">Why choose me</h3>
                 <div class="choice__wrapper">
@@ -93,7 +98,7 @@
         <section class="knowledge section">
             <div class="container">
                 <h3 class="choice__title title">What i know</h3>
-                <div class="choice__wrapper owl-carousel owl-theme">
+                <div class="choice__wrapper knowledge__carousel owl-carousel owl-theme">
                     <div class="choice__cart cart cart-carousel">
                         <figure class="cart__figure">
                             <img src="img/html.png" class="cart__image" alt=""/>
@@ -188,42 +193,64 @@
 
         <section class="portfolio section">
             <div class="container container-fluid">
-                <h3 class="portfolio__title title">My practices</h3>
-                <p class="portfolio__text">
-                    Here I practiced Flex.
-                </p>
-                <div class="page">
-                    <img class="page__image" src="img/first.jpg" alt="">
-                    <div class="page__info">
-                        <div class="page__top">
-                            <p class="page__name">Riddle</p>
-                            <a href="/riddle/" target="_blank" class="page__icon"><i class="fas fa-link"></i></a>
+                <h3 class="portfolio__title title">Some practices</h3>
+                <div class="portfolio__carousel owl-carousel owl-theme">
+                    <div class="portfolio__item">
+                        <div class="page">
+                            <img class="page__image" src="img/first.jpg" alt="">
+                            <div class="page__info">
+                                <div class="page__top">
+                                    <p class="page__name">Riddle (Flex)</p>
+                                    <a href="/riddle/" target="_blank" class="page__icon"><i class="fas fa-link"></i></a>
+                                </div>
+                                <a class="page__link" target="_blank" href="/riddle/"><i class="fas fa-ellipsis-h"></i></a>
+                            </div>
                         </div>
-                        <a class="page__link" target="_blank" href="#"><i class="fas fa-ellipsis-h"></i></a>
                     </div>
-                </div>
-                <p class="portfolio__text">
-                    Simple ToDoList. By doing this site, i practiced my JS.
-                </p>
-                <div class="page">
-                    <img class="page__image" src="img/second.png" alt="">
-                    <div class="page__info">
-                        <div class="page__top">
-                            <p class="page__name">ToDoList</p>
-                            <a href="/todolist" target="_blank" class="page__icon"><i class="fas fa-link"></i></a>
+                    <div class="portfolio__item">
+                        <div class="page">
+                            <img class="page__image" src="img/second.png" alt="">
+                            <div class="page__info">
+                                <div class="page__top">
+                                    <p class="page__name">ToDoList (Vanilla JS)</p>
+                                    <a href="/todolist" target="_blank" class="page__icon"><i class="fas fa-link"></i></a>
+                                </div>
+                                <a class="page__link" href="/todolist" target="_blank"><i class="fas fa-ellipsis-h"></i></a>
+                            </div>
                         </div>
-                        <a class="page__link" href="/todolist" target="_blank"><i class="fas fa-ellipsis-h"></i></a>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="page">
+                            <img class="page__image" src="img/third.png" alt="">
+                            <div class="page__info">
+                                <div class="page__top">
+                                    <p class="page__name">Elevators (C#, WPF, MVVM)</p>
+                                    <a href="https://github.com/rasif/elevators" target="_blank" class="page__icon"><i class="fas fa-link"></i></a>
+                                </div>
+                                <a class="page__link" href="https://github.com/rasif/elevators" target="_blank"><i class="fas fa-ellipsis-h"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <footer class="footer section"> 
+            <a href="https://github.com/rasif" class="footer__icons" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://vk.com/bozqurdam" class="footer__icons" target="_blank">
+                <i class="fab fa-vk"></i>
+            </a>
+        </footer>
+
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
         <script src="libs/owl.carousel.min.js"></script>
-        <script src="libs/scrollSpeed.js"></script>
-        <script src="js/app.js" defer></script>
-        <script>
-                $('.owl-carousel').owlCarousel(
+        <script src="libs/scrollSpeed.js" ></script>
+        <script src="js/app.js" ></script>
+        <script type="text/javascript">
+                $('.knowledge__carousel').owlCarousel(
                 {
                     loop:true,
                     margin:10,
@@ -235,6 +262,18 @@
                         600:
                         {
                             items:3
+                        }
+                    }
+                });
+
+                $('.portfolio__carousel').owlCarousel(
+                {
+                    loop:true,
+                    margin:0,
+                    responsive:{
+                        0:
+                        {
+                            items:1,
                         }
                     }
                 });

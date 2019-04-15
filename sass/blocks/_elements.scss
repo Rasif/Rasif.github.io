@@ -75,3 +75,53 @@
     outline: none;
     border: none;
 }
+
+.body-active
+{
+    overflow-y: hidden;
+}
+
+.preloader
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #222222;
+    transition: 0.3s;
+    
+    &.active
+    {
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    &__circle
+    {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 4px solid transparent;
+        border-top: 4px solid white;
+        animation: preloaderAnim 1s linear infinite forwards;
+    }
+
+    @keyframes preloaderAnim
+    {
+        0%
+        {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100%
+        {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+}

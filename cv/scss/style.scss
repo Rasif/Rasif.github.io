@@ -148,4 +148,40 @@ body {
     &__heading {
         font-weight: 400;
     }
+
+    &__interests {
+        display: flex;
+        flex-wrap: wrap;;
+    }
+
+    &__line {
+        width: 50%;
+        margin-bottom: 4px;
+        padding-bottom: 2px;
+    }
+}
+
+.socials {
+    &__holder {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    &__icons {
+        text-align: center;
+    }
+
+    &__item {
+        margin-right: 7px;
+    }
+
+    &__icon {
+        color: #acb6ff;
+        transition: 0.3s;
+
+        &:hover {
+            color: #576cff;
+            transition: 0.3s;
+        }
+    }
 }

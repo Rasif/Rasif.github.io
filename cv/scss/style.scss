@@ -1,11 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Roboto:wght@100;300;400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+html,
 body {
-    background-color: red;
+    min-height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+}
+
+.page {
+    min-height: 100vh;
+    background-color: #f0f0f0;
     font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+.header {
+    &__holder {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Josefin Sans';
+        font-weight: 300;
+    }
+
+    &__left {
+        width: 40%;
+        background-color: #ced4ff;
+        padding: 35px;
+    }
+
+    &__right {
+        width: 60%;
+        background-color: white;
+        padding: 35px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        padding-left: 10px;
+    }
+
+    &__first {
+        font-weight: 400;
+    }
+
+    &__second {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    &__author {
+        font-size: 40px;
+    }
+
+    &__profession {
+        font-size: 20px;
+        padding-left: 2px;
+    }
 }

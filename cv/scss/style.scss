@@ -24,7 +24,7 @@ body {
     padding: 20px;
 }
 
-.header {
+.section {
     margin-bottom: 20px;
 
     &__holder {
@@ -32,6 +32,7 @@ body {
         display: flex;
         justify-content: center;
         font-weight: 300;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
     }
 
     &__left {
@@ -45,26 +46,9 @@ body {
         background-color: white;
         padding: 35px;
     }
+}
 
-    &__block {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    &__name {
-        padding-left: 10px;
-    }
-
-    &__first {
-        font-weight: 400;
-    }
-
-    &__second {
-        font-size: 12px;
-        font-weight: 300;
-    }
-
+.header {
     &__author {
         font-size: 40px;
     }
@@ -75,13 +59,35 @@ body {
     }
 }
 
+.contacts {
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;  
+    }
+
+    &__block {
+        padding-left: 10px;
+    }
+
+    &__property {
+        font-weight: 400;
+    }
+
+    &__value {
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
 .main {  
     margin-bottom: 20px;
-      
+
     &__holder {
         background-color: white;
         border-bottom: 3px solid #f0f0f0;
         padding: 35px;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
     }
 
     &__title {
@@ -97,5 +103,52 @@ body {
         padding-top: 10px;
         width: 80%;
         margin: auto;
+    }
+}
+
+.about {
+    &__left {
+        padding-right: 0;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+    }
+
+    &__figure {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        border: 5px solid#f0f0f0;
+        overflow: hidden;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__info {
+        margin-left: 20px;
+    }
+
+    &__bold {
+        font-weight: 400;
+    }
+
+    &__title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 7px 15px;
+        background-color: #576cff;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #f0f2ff;
+    }
+
+    &__heading {
+        font-weight: 400;
     }
 }

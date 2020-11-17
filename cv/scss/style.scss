@@ -28,6 +28,7 @@ body {
     margin-bottom: 20px;
 
     &__holder {
+        background-color: white;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -80,14 +81,10 @@ body {
     }
 }
 
-.main {  
-    margin-bottom: 20px;
-
+.briefing {  
     &__holder {
-        background-color: white;
-        border-bottom: 3px solid #f0f0f0;
+        flex-direction: column;
         padding: 35px;
-        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
     }
 
     &__title {
@@ -97,7 +94,7 @@ body {
         padding-bottom: 10px;
     }
 
-    &__about {
+    &__text {
         font-weight: 300;
         font-size: 18px;
         padding-top: 10px;

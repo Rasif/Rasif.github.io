@@ -37,6 +37,7 @@ body {
     }
 
     &__left {
+        min-width: 400px;
         width: 40%;
         background-color: #ced4ff;
         padding: 35px;
@@ -188,7 +189,7 @@ body {
         }
 
         &-seven::after {
-            width: 72%;
+            width: 70%;
         }
 
         &-eight::after {
@@ -207,6 +208,45 @@ body {
             bottom: 0;
             left: 0;
             background-color: #c4c4c4;
+        }
+    }
+
+    &__languages {
+        display: flex;
+
+        &-block {
+            display: flex;
+            align-items: flex-end;
+            width: 50%;
+        }
+    }
+
+    &__proficiency {
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        margin-right: 17px;
+
+        &-russian {
+            background-color: #0663C7;
+            height: 120px;
+        }
+
+        &-azerbaijani {
+            height: 108px;
+            background-color: #6BB7FF;
+        }
+
+        &-english {
+            height: 83px;
+            background-color: lighten(#6BB7FF, 10%);
+        }
+
+        &-spain {
+            height: 25px;
+            background-color: lighten(#6BB7FF, 12%);
         }
     }
 }

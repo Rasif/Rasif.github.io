@@ -276,6 +276,8 @@ body {
     &__book {
         margin-top: 4px;
         margin-bottom: 3px;
+        display: flex;
+        align-items: center;
     }
 
     &__marker {
@@ -284,6 +286,17 @@ body {
         width: 4px;
         background-color: #C4CBFF;
         border-radius: 100%;
+        margin-right: 8px;
+    }
+
+    &__experience {
+        margin-bottom: 30px;
+    }
+
+    &__work {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 11px;
     }
 }
 

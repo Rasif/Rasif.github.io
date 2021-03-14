@@ -3,6 +3,7 @@
     display: flex;
     position: relative;
 
+  
     &__left {
         flex-basis: 75%;
         background: url('../../images/main.webp') no-repeat right -1px top 0px;
@@ -43,6 +44,14 @@
         font-weight: 900;
         color: $primaryColor;
 
+        @media all and (max-width: 992px) {
+            font-size: 36px;
+        }
+
+        @media all and (max-width: 768px) {
+            display: none;
+        }
+
         &-text {
             display: inline-block;
             text-transform: uppercase;
@@ -51,12 +60,6 @@
             padding-left: 10px;
             padding-right: 10px;
             transform: translateX(-10px);
-        }
-
-        @media all and (max-width: 768px) {
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
     }
 

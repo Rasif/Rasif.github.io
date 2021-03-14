@@ -73,6 +73,45 @@ const onContentLoaded = () => {
 		centerMode: false,
 		variableWidth: true
 	});
+
+	const mediaQueryDesktopMin = window.matchMedia('(min-width: 992px');
+	const mediaQueryDesktop = window.matchMedia('(max-width: 992px)');
+	const mediaQueryTablet = window.matchMedia('(max-width: 768px)');
+
+	function handleDesktopChanged(e) {
+		if (e.matches) {
+			$('.shop__item').css('width', '280px');
+
+			$('.shop__wrapper').slick('slickSetOption', 'variableWidth', false);
+			$('.shop__wrapper').slick('slickSetOption', 'slidesToShow', 2);
+
+			$('.favorites').slick('slickSetOption', 'variableWidth', false);
+		}
+	}
+
+	function handleTabletChanged(e) {
+		if (e.matches) {
+			$('.shop__item').css('width', '100%');
+			$('.shop__wrapper').slick('slickSetOption', 'slidesToShow', 1);
+
+			$('.favorites').slick('slickSetOption', 'slidesToShow', 1);
+		}
+	}
+
+	function handleDesktopMinChanged(e) {
+		if (e.matches) {
+			$('.shop__item').css('width', '350px');
+			$('.shop__wrapper').slick('slickSetOption', 'variableWidth', true);
+			$('.shop__wrapper').slick('slickSetOption', 'slidesToShow', 3);
+		}
+	}
+
+	mediaQueryDesktop.addEventListener('change', handleDesktopChanged);
+	mediaQueryTablet.addEventListener('change', handleTabletChanged);
+	mediaQueryDesktopMin.addEventListener('change', handleDesktopMinChanged);
+
+	handleDesktopChanged(mediaQueryDesktop);
+	handleTabletChanged(mediaQueryTablet);
 };
 
 document.addEventListener('DOMContentLoaded', onContentLoaded);

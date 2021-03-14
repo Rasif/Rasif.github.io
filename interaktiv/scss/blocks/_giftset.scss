@@ -13,6 +13,16 @@
         padding-right: 10px;
     }
 
+    @media all and (max-width: 768px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media all and (max-width: 576px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     &__wrapper {
         width: 100%;
     }
@@ -27,6 +37,10 @@
 
     &:not(:last-child) {
         margin-right: 25px;
+
+        @media all and (max-width: 768px) {
+            margin-right: 0;
+        }
     }
 
     &__figure {

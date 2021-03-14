@@ -16,12 +16,21 @@
     &__block {
         width: 500px;
         margin-right: 30px;
+
+        @media all and (max-width: 768px) {
+            margin-right: 0;
+            width: 100%;   
+         }
     }
 }
 
 .favorite {
     display: flex;
     box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+
+    @media all and (max-width: 992px) {
+       flex-direction: column;     
+    }
     
     &:not(:last-child) {
         margin-bottom: 25px;
@@ -36,6 +45,10 @@
         width: 40%;
         display: flex;
         align-items: center;
+
+        @media all and (max-width: 992px) {
+            width: 100%;     
+        }
     }
 
     &__image {
@@ -50,5 +63,9 @@
         background-color: white;
         display: flex;
         align-items: center;
+
+        @media all and (max-width: 992px) {
+            width: 100%;     
+        }
     }
 }

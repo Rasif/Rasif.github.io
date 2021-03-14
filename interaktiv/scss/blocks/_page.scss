@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: $accentLightColor;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+}

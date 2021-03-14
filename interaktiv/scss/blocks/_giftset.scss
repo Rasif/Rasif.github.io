@@ -1,0 +1,59 @@
+.giftset {
+    @include hiddenBlock(false, true);
+
+    min-height: 100vh;
+}
+
+.shop {
+    width: 100%;
+    padding-left: 150px;
+
+    @media all and (max-width: 992px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__wrapper {
+        width: 100%;
+    }
+}
+
+.shopItem {
+    background-color: white;
+    box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+    position: relative;
+    padding-bottom: 20px;
+    width: 400px;
+
+    &:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    &__figure {
+        background-color: $lightGray;
+        margin-bottom: 25px;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__info {
+        padding: 30px;
+    }
+
+    &__oldPrice {
+        font-size: 14px;   
+        color: $primaryColor;
+        text-decoration: line-through;
+    } 
+
+    &__buttons {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right:0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

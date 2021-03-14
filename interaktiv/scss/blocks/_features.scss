@@ -1,0 +1,38 @@
+.features {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media all and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.featureItem {
+    width: 20%;
+    text-align: center;
+
+    &__image {
+        margin-bottom: 40px;
+    }
+
+    &__heading {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    &__text {
+        font-weight: 300;
+    }
+
+    @media all and (max-width: 768px) {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+
+    @media all and (max-width: 576px) {
+        width: 100%;
+    }
+}

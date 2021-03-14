@@ -1,0 +1,26 @@
+@mixin hiddenBlock($isLeft: true, $isBlack: true) {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 25%;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+
+        @if $isLeft {
+            left: 0;
+        } @else {
+            right: 0;
+        }
+
+        @if $isBlack {
+            background-color: $primaryColor;
+        } @else {
+            background-color: $accentLightColor;
+        }
+
+        @media all and (max-width: 992px) {
+            display: none;
+        }
+    }
+}

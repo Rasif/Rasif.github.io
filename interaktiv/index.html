@@ -1,367 +1,269 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="макет для тестового задания">
-        <meta name="keywords" content="тестовое задание, frontend, junior, верстальщик">
-        <title>Тестовый макет для верстки</title>
-        <link rel="stylesheet" href="css/mini.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__play playButton"></div>
-            <p class="header__title">
-                Your <span class="header__title-text">Personalized</span> Coffee
-            </p>
-            <div class="header__left">
-                <img class="header__logo" src="images/revo_logo.webp" alt>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="макет для тестового задания">
+    <meta name="keywords" content="тестовое задание, frontend, junior, верстальщик">
+    <title>Тестовый макет для верстки</title>
+    <link rel="stylesheet" href="css/mini.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  </head>
+  <body></body>
+  <header class="header">
+    <div class="header__play playButton"></div>
+    <p class="header__title">
+      <Your> </Your><span class="header__title-text">Personalized </span>
+      <Coffee></Coffee>
+    </p>
+    <div class="header__left"><img class="header__logo" src="images/revo_logo.webp" alt></div>
+    <div class="header__right">
+      <nav class="header__menu menu">
+        <div class="header__cart cart"><i class="cart__image fas fa-shopping-cart"></i><span class="cart__info">2</span></div>
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link menu__link-active" href="#">TRANG CHỦ</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">COFFEE</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">PHIN MẠ MÀU</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">COMBO PHIN PHÊ</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">GIFTSET</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="features section">
+    <div class="container">
+      <h2 class="subtitle">Your Personalized Coffee</h2>
+      <h1 class="title">COFFEE BUILD YOUR BASE</h1>
+      <div class="features__wrapper">
+        <div class="featureItem"><img class="featureItem__image" src="images/features(1).webp" alt>
+          <p class="featureItem__heading">Nguồn gốc</p>
+          <p class="featureItem__text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</p>
+        </div>
+        <div class="featureItem"><img class="featureItem__image" src="images/features(2).webp" alt>
+          <p class="featureItem__heading">Chất lượng</p>
+          <p class="featureItem__text">Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ nhân cà phê.</p>
+        </div>
+        <div class="featureItem"><img class="featureItem__image" src="images/features(3).webp" alt>
+          <p class="featureItem__heading">Các loại hạt</p>
+          <p class="featureItem__text">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green bean.</p>
+        </div>
+        <div class="featureItem"><img class="featureItem__image" src="images/features(4).webp" alt>
+          <p class="featureItem__heading">Pha chế</p>
+          <p class="featureItem__text">Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và nghiêm ngặt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="coffee section">
+    <div class="container">
+      <h2 class="subtitle"> Choose Your Favorite</h2>
+      <h1 class="title">CHUẨN GU ĐÚNG VỊ</h1>
+    </div>
+    <favorites>
+      <div class="favorites__block">
+        <div class="favorite">
+          <div class="favorite__left"><img class="favorite__image" src="images/item(1).webp" alt></div>
+          <div class="favorite__right">
+            <div class="favorite__info">
+              <p class="price">99.000</p>
+              <p class="heading">REVO Morning</p>
+              <p class="text">đắng, hậu ngọt, hương hoa </p>
+              <div class="buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT                   </span></div>
             </div>
-            <div class="header__right">
-                <nav class="header__menu menu">
-                    <div class="header__cart cart">
-                        <i class="cart__image fas fa-shopping-cart">
-                        </i>
-                        <span class="cart__info">2</span>
-                    </div>
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link menu__link-active" href="#">TRANG CHỦ</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">COFFEE</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">PHIN MẠ MÀU</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">COMBO PHIN PHÊ</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">GIFTSET</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">LIÊN HỆ</a></li>
-                    </ul>
-                </nav>
+          </div>
+        </div>
+        <div class="favorite">
+          <div class="favorite__left"><img class="favorite__image" src="images/item(2).webp" alt></div>
+          <div class="favorite__right">
+            <div class="favorite__info">
+              <p class="price">139.000</p>
+              <p class="heading">REVO Origin</p>
+              <p class="text">hậu ngọt, ít đắng, vị chua dâu</p>
+              <div class="buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT                                </span></div>
             </div>
-        </header>
-        <section class="features section">
-            <div class="container">
-                <h2 class="subtitle">Your Personalized Coffee</h2>
-                <h1 class="title">COFFEE BUILD YOUR BASE</h1>
-                <div class="features__wrapper">
-                    <div class="featureItem">
-                        <img class="featureItem__image" src='images/features(1).webp' alt>
-                        <p class="featureItem__heading">Nguồn gốc</p>
-                        <p class="featureItem__text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</p>
-                    </div>
-                    <div class="featureItem">
-                        <img class="featureItem__image" src='images/features(2).webp' alt>
-                        <p class="featureItem__heading">Chất lượng</p>
-                        <p class="featureItem__text">Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ nhân cà phê.</p>
-                    </div>
-                    <div class="featureItem">
-                        <img class="featureItem__image" src='images/features(3).webp' alt>
-                        <p class="featureItem__heading">Các loại hạt</p>
-                        <p class="featureItem__text">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green bean.</p>
-                    </div>
-                    <div class="featureItem">
-                        <img class="featureItem__image" src='images/features(4).webp' alt>
-                        <p class="featureItem__heading">Pha chế</p>
-                        <p class="featureItem__text">Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và nghiêm ngặt.</p>
-                    </div>
+          </div>
+        </div>
+      </div>
+      <div class="favorites__block">
+        <div class="favorite">
+          <div class="favorite__left"><img class="favorite__image" src="images/item(1).webp" alt></div>
+          <div class="favorite__right">
+            <div class="favorite__info">
+              <p class="price">85.000</p>
+              <p class="heading">REVO Everyday</p>
+              <p class="text">cân bằng, hậu đắng, vị chocolate</p>
+              <div class="buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="favorite">
+          <div class="favorite__left"><img class="favorite__image" src="images/item(2).webp" alt></div>
+          <div class="favorite__right">
+            <div class="favorite__info">
+              <p class="price">75.000</p>
+              <p class="heading">REVO Đậm Đà</p>
+              <p class="text">đậm đà, đắng, truyền thống</p>
+              <div class="buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="favorites__block">
+        <div class="favorite">
+          <div class="favorite__left"><img class="favorite__image" src="images/item(1).webp" alt></div>
+          <div class="favorite__right">
+            <div class="favorite__info">
+              <p class="price">85.000</p>
+              <p class="heading">REVO Everyday</p>
+              <p class="text">cân bằng, hậu đắng, vị chocolate </p>
+              <div class="buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="favorite">
+          <div class="favorite__left"><img class="favorite__image" src="images/item(2).webp" alt></div>
+          <div class="favorite__right">
+            <div class="favorite__info">
+              <p class="price">75.000</p>
+              <p class="heading">REVO Đậm Đà</p>
+              <p class="text">đậm đà, đắng, truyền thống</p>
+              <div class="buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </favorites>
+  </section>
+  <section class="combo section">
+    <div class="container">
+      <h2 class="subtitle">Best Gift For Best Friend</h2>
+      <h1 class="title">GIFTSET</h1>
+      <div class="tabs">
+        <div class="tabs__links">
+          <p class="tabs__link tabs__link-active">1</p>
+          <p class="tabs__link">2</p>
+          <p class="tabs__link">3</p>
+        </div>
+        <div class="tabs__item tabs__item-active tabs__item-opacity">
+          <div class="tabs__left"><img class="tabs__image" src="images/tab.webp" alt=""></div>
+          <div class="tabs__right">
+            <p class="price">285.000</p>
+            <p class="heading">Giftset "Cà phê phin Việt Nam"</p>
+            <p class="text">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</p>
+            <div class="tabs__info">
+              <div class="tabs__info-item"><img class="tabs__info-image" src="images/coffee.webp" alt="">
+                <div>
+                  <p class="tabs__info-title">Loại hạt</p>
+                  <p class="tabs__info-subtitle">Fine Robusta Blend</p>
                 </div>
-            </div>
-        </section>
-        <section class="coffee section">
-            <div class="container">
-                <h2 class="subtitle">Choose Your Favorite</h2>
-                <h1 class="title">CHUẨN GU ĐÚNG VỊ</h1>
-            </div>
-            <div class="favorites">
-                <div class="favorites__block">
-                    <div class="favorite">
-                        <div class="favorite__left">
-                            <img class="favorite__image" src="images/item(1).webp" alt>
-                        </div>
-                        <div class="favorite__right">
-                            <div class="favorite__info">
-                                <p class="price">99.000</p>
-                                <p class="heading">REVO Morning</p>
-                                <p class="text">đắng, hậu ngọt, hương hoa </p>
-                                <div class="buttons">
-                                    <span class="button">MUA NGAY</span>
-                                    <span class="link">CHI TIẾT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="favorite">
-                        <div class="favorite__left">
-                            <img class="favorite__image" src="images/item(2).webp" alt>
-                        </div>
-                        <div class="favorite__right">
-                            <div class="favorite__info">
-                                <p class="price">139.000</p>
-                                <p class="heading">REVO Origin</p>
-                                <p class="text">hậu ngọt, ít đắng, vị chua dâu</p>
-                                <div class="buttons">
-                                    <span class="button">MUA NGAY</span>
-                                    <span class="link">CHI TIẾT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="tabs__info-item"><img class="tabs__info-image" src="images/mountain.webp" alt="">
+                <div>
+                  <p class="tabs__info-title">Độ cao</p>
+                  <p class="tabs__info-subtitle">700 - 800m</p>
                 </div>
-                <div class="favorites__block">
-                    <div class="favorite">
-                        <div class="favorite__left">
-                            <img class="favorite__image" src="images/item(1).webp" alt>
-                        </div>
-                        <div class="favorite__right">
-                            <div class="favorite__info">
-                                <p class="price">85.000</p>
-                                <p class="heading">REVO Everyday</p>
-                                <p class="text">cân bằng, hậu đắng, vị chocolate </p>
-                                <div class="buttons">
-                                    <span class="button">MUA NGAY</span>
-                                    <span class="link">CHI TIẾT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="favorite">
-                        <div class="favorite__left">
-                            <img class="favorite__image" src="images/item(2).webp" alt>
-                        </div>
-                        <div class="favorite__right">
-                            <div class="favorite__info">
-                                <p class="price">75.000</p>
-                                <p class="heading">REVO Đậm Đà</p>
-                                <p class="text">đậm đà, đắng, truyền thống</p>
-                                <div class="buttons">
-                                    <span class="button">MUA NGAY</span>
-                                    <span class="link">CHI TIẾT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="buttons"><span class="button">MUA NGAY</span><span class="tabs__buttonLink link">CHI TIẾT</span></div>
+          </div>
+        </div>
+        <div class="tabs__item">
+          <div class="tabs__left"><img class="tabs__image" src="images/tab.webp" alt=""></div>
+          <div class="tabs__right">
+            <p class="price">285.000</p>
+            <p class="heading">Giftset "Cà phê phin Việt Nam"</p>
+            <p class="text">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</p>
+            <div class="tabs__info">
+              <div class="tabs__info-item"><img class="tabs__info-image" src="images/coffee.webp" alt="">
+                <div>
+                  <p class="tabs__info-title">Loại hạt</p>
+                  <p class="tabs__info-subtitle">Fine Robusta Blend</p>
                 </div>
-                <div class="favorites__block">
-                    <div class="favorite">
-                        <div class="favorite__left">
-                            <img class="favorite__image" src="images/item(1).webp" alt>
-                        </div>
-                        <div class="favorite__right">
-                            <div class="favorite__info">
-                                <p class="price">85.000</p>
-                                <p class="heading">REVO Everyday</p>
-                                <p class="text">cân bằng, hậu đắng, vị chocolate </p>
-                                <div class="buttons">
-                                    <span class="button">MUA NGAY</span>
-                                    <span class="link">CHI TIẾT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="favorite">
-                        <div class="favorite__left">
-                            <img class="favorite__image" src="images/item(2).webp" alt>
-                        </div>
-                        <div class="favorite__right">
-                            <div class="favorite__info">
-                                <p class="price">75.000</p>
-                                <p class="heading">REVO Đậm Đà</p>
-                                <p class="text">đậm đà, đắng, truyền thống</p>
-                                <div class="buttons">
-                                    <span class="button">MUA NGAY</span>
-                                    <span class="link">CHI TIẾT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="tabs__info-item"><img class="tabs__info-image" src="images/mountain.webp" alt="">
+                <div>
+                  <p class="tabs__info-title">Độ cao</p>
+                  <p class="tabs__info-subtitle">700 - 800m</p>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="combo section">
-            <div class="container">
-                <h2 class="subtitle">Best Gift For Best Friend</h2>
-                <h1 class="title">GIFTSET</h1>
-                <div class="tabs">
-                    <div class="tabs__links">
-                        <p class="tabs__link tabs__link-active">1</p>
-                        <p class="tabs__link">2</p>
-                        <p class="tabs__link">3</p>
-                    </div>
-                    <div class="tabs__item tabs__item-active tabs__item-opacity">
-                        <div class="tabs__left">
-                            <img class="tabs__image" src="images/tab.webp" alt>
-                        </div>
-                        <div class="tabs__right">
-                            <p class="price">285.000</p>
-                            <p class="heading">Giftset "Cà phê phin Việt Nam"</p>
-                            <p class="text">
-                                Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.
-                            </p>
-                            <div class="tabs__info">
-                                <div class="tabs__info-item">
-                                    <img class="tabs__info-image" src="images/coffee.webp" alt>
-                                    <div>
-                                        <p class="tabs__info-title">Loại hạt</p>
-                                        <p class="tabs__info-subtitle">Fine Robusta Blend</p>
-                                    </div>
-                                </div>
-                                <div class="tabs__info-item">
-                                    <img class="tabs__info-image" src="images/mountain.webp" alt>
-                                    <div>
-                                        <p class="tabs__info-title">Độ cao</p>
-                                        <p class="tabs__info-subtitle">700 - 800m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <span class="button">MUA NGAY</span>
-                                <span class="tabs__buttonLink link">CHI TIẾT</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs__item">
-                        <div class="tabs__left">
-                            <img class="tabs__image" src="images/tab.webp" alt>
-                        </div>
-                        <div class="tabs__right">
-                            <p class="price">285.000</p>
-                            <p class="heading">Second</p>
-                            <p class="text">
-                                Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.
-                            </p>
-                            <div class="tabs__info">
-                                <div class="tabs__info-item">
-                                    <img class="tabs__info-image" src="images/coffee.webp" alt>
-                                    <div>
-                                        <p class="tabs__info-title">Loại hạt</p>
-                                        <p class="tabs__info-subtitle">Fine Robusta Blend</p>
-                                    </div>
-                                </div>
-                                <div class="tabs__info-item">
-                                    <img class="tabs__info-image" src="images/mountain.webp" alt>
-                                    <div>
-                                        <p class="tabs__info-title">Độ cao</p>
-                                        <p class="tabs__info-subtitle">700 - 800m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <span class="button">MUA NGAY</span>
-                                <span class="tabs__buttonLink link">CHI TIẾT</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs__item">
-                        <div class="tabs__left">
-                            <img class="tabs__image" src="images/tab.webp" alt>
-                        </div>
-                        <div class="tabs__right">
-                            <p class="price">285.000</p>
-                            <p class="heading">Third</p>
-                            <p class="text">
-                                Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.
-                            </p>
-                            <div class="tabs__info">
-                                <div class="tabs__info-item">
-                                    <img class="tabs__info-image" src="images/coffee.webp" alt>
-                                    <div>
-                                        <p class="tabs__info-title">Loại hạt</p>
-                                        <p class="tabs__info-subtitle">Fine Robusta Blend</p>
-                                    </div>
-                                </div>
-                                <div class="tabs__info-item">
-                                    <img class="tabs__info-image" src="images/mountain.webp" alt>
-                                    <div>
-                                        <p class="tabs__info-title">Độ cao</p>
-                                        <p class="tabs__info-subtitle">700 - 800m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <span class="button">MUA NGAY</span>
-                                <span class="tabs__buttonLink link">CHI TIẾT</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="buttons"><span class="button">MUA NGAY</span><span class="tabs__buttonLink link">CHI TIẾT</span></div>
+          </div>
+        </div>
+        <div class="tabs__item">
+          <div class="tabs__left"><img class="tabs__image" src="images/tab.webp" alt=""></div>
+          <div class="tabs__right">
+            <p class="price">285.000</p>
+            <p class="heading">Giftset "Cà phê phin Việt Nam"</p>
+            <p class="text">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</p>
+            <div class="tabs__info">
+              <div class="tabs__info-item"><img class="tabs__info-image" src="images/coffee.webp" alt="">
+                <div>
+                  <p class="tabs__info-title">Loại hạt</p>
+                  <p class="tabs__info-subtitle">Fine Robusta Blend</p>
                 </div>
-            </div>
-        </section>
-        <section class="giftset section">
-            <div class="container">
-                <h2 class="subtitle">Your Personalized Coffee</h2>
-                <h1 class="title">COMBO PHIN PHÊ</h1>   
-            </div>
-            <div class="shop">
-                <div class="shop__wrapper">
-                    <div class="shop__item shopItem">
-                        <figure class="shopItem__figure">
-                            <img class="shopItem__image" src="images/item(1).webp" alt>
-                        </figure>
-                        <div class="shopItem__info">
-                            <span class="price">147.000</span>
-                            <span class="shopItem__oldPrice">155.000</span>
-                            <p class="heading">Combo Revo Đậm Đà</p>
-                            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
-                            <div class="shopItem__buttons buttons">
-                                <span class="button">MUA NGAY</span>
-                                <span class="link">CHI TIẾT</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop__item shopItem">
-                        <figure class="shopItem__figure">
-                            <img class="shopItem__image" src="images/item(2).webp" alt>
-                        </figure>
-                        <div class="shopItem__info">
-                            <span class="price">156.000</span>
-                            <span class="shopItem__oldPrice">165.000</span>
-                            <p class="heading">Combo Revo Everyday</p>
-                            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
-                            <div class="shopItem__buttons buttons">
-                                <span class="button">MUA NGAY</span>
-                                <span class="link">CHI TIẾT</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop__item shopItem">
-                        <figure class="shopItem__figure">
-                            <img class="shopItem__image" src="images/item(3).webp" alt>
-                        </figure>
-                        <div class="shopItem__info">
-                            <span class="price">275.000</span>
-                            <span class="shopItem__oldPrice">260.000</span>
-                            <p class="heading">Combo Revo Honey</p>
-                            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
-                            <div class="shopItem__buttons buttons">
-                                <span class="button">MUA NGAY</span>
-                                <span class="link">CHI TIẾT</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop__item shopItem">
-                        <figure class="shopItem__figure">
-                            <img class="shopItem__image" src="images/item(2).webp" alt>
-                        </figure>
-                        <div class="shopItem__info">
-                            <span class="price">249.000</span>
-                            <span class="shopItem__oldPrice">250.000</span>
-                            <p class="heading">Combo Revo Honey</p>
-                            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
-                            <div class="shopItem__buttons buttons">
-                                <span class="button">MUA NGAY</span>
-                                <span class="link">CHI TIẾT</span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="tabs__info-item"><img class="tabs__info-image" src="images/mountain.webp" alt="">
+                <div>
+                  <p class="tabs__info-title">Độ cao</p>
+                  <p class="tabs__info-subtitle">700 - 800m</p>
                 </div>
+              </div>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="container">
-                <p class="footer__text">
-                    © Revo Coffee Việt Nam - 2018
-                </p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src='js/main.js'></script>
-    </body>
+            <div class="buttons"><span class="button">MUA NGAY</span><span class="tabs__buttonLink link">CHI TIẾT</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="giftset section">
+    <div class="container">
+      <h2 class="subtitle">Your Personalized Coffee</h2>
+      <h1 class="title">COMBO PHIN PHÊ</h1>
+    </div>
+    <div class="shop">
+      <div class="shop__wrapper">
+        <div class="shop__item shopItem">
+          <figure class="shopItem__figure"><img class="shopItem__image" src="images/item(1).webp" alt=""></figure>
+          <div class="shopItem__info"><span class="price">147.000</span><span class="shopItem__oldPrice">155.000</span>
+            <p class="heading">Combo Revo Đậm Đà</p>
+            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+            <div class="shopItem__buttons buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+          </div>
+        </div>
+        <div class="shop__item shopItem">
+          <figure class="shopItem__figure"><img class="shopItem__image" src="images/item(2).webp" alt=""></figure>
+          <div class="shopItem__info"><span class="price">156.000</span><span class="shopItem__oldPrice">165.000</span>
+            <p class="heading">Combo Revo Everyday</p>
+            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+            <div class="shopItem__buttons buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+          </div>
+        </div>
+        <div class="shop__item shopItem">
+          <figure class="shopItem__figure"><img class="shopItem__image" src="images/item(3).webp" alt=""></figure>
+          <div class="shopItem__info"><span class="price">275.000</span><span class="shopItem__oldPrice">260.000</span>
+            <p class="heading">Combo Revo Honey</p>
+            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+            <div class="shopItem__buttons buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+          </div>
+        </div>
+        <div class="shop__item shopItem">
+          <figure class="shopItem__figure"><img class="shopItem__image" src="images/item(2).webp" alt=""></figure>
+          <div class="shopItem__info"><span class="price">249.000</span><span class="shopItem__oldPrice">250.000</span>
+            <p class="heading">Combo Revo Honey</p>
+            <p class="text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+            <div class="shopItem__buttons buttons"><span class="button">MUA NGAY</span><span class="link">CHI TIẾT</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© Revo Coffee Việt Nam - 2018</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </html>
